@@ -20,4 +20,14 @@ function playRound(playerSelection, computerSelection){
         return 'You Lose!'
     }
 } 
-console.log(playRound(playerSelection, computerSelection))
+
+// play multiple rounds of the game
+
+function playGame(){
+    console.log(playRound(playerSelection, getComputerChoice(choice)));
+    console.log(playRound(playerSelection, getComputerChoice(choice)));
+    console.log(playRound(playerSelection, getComputerChoice(choice)));
+    console.log(playRound(playerSelection, getComputerChoice(choice)));
+    console.log(playRound(playerSelection, getComputerChoice(choice)));
+}
+playGame();
