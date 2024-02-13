@@ -24,10 +24,10 @@ function playRound(playerSelection, computerSelection){
 // play multiple rounds of the game
 
 function playGame(){
-    console.log(playRound(playerSelection, getComputerChoice(choice)));
-    console.log(playRound(playerSelection, getComputerChoice(choice)));
-    console.log(playRound(playerSelection, getComputerChoice(choice)));
-    console.log(playRound(playerSelection, getComputerChoice(choice)));
-    console.log(playRound(playerSelection, getComputerChoice(choice)));
+    for (let i = 0; i < 5; i++) {
+        let playerSelection = prompt('What do you pick?');
+        let computerSelection = getComputerChoice(choice);
+        console.log(`Round ${i}: ${playRound(playerSelection, computerSelection)}`);
+      }
 }
 playGame();
